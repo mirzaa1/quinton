@@ -1,22 +1,45 @@
 # Laporan Hasil Research
 
-<!-- Dokumen ini ditulis dalam format Markdown (.md) -->
-
 ## Background
 
-Shelver OS merupakan sistem operasi yang dirancang secara khusus untuk mendukung kebutuhan lembaga GLAM (Gallery, Library, Archives, and Museums). Sistem ini dikembangkan dengan pendekatan fungsional dan berorientasi pada stabilitas, keberlanjutan, serta kemudahan untuk hardware dengan spesifikasi rendah dalam skala global.  
+Quinton merpukana riset yang bertujuan untuk pengembangan sistem operasi bagi lembaga GLAM (Gallery, Library, Archives, and Museums). Riset ini bertujuan untuk mencari kernel dan desktop environment yang cocok digunakan bagi perangkat dengan spesifikasi rendah dan waktu produksi yang telah lebih dari 10 tahun. Cakupan penelitian yang mengambil dengan batasan spesifikasi rendah yang telah lebih dari 10 tahun karena tingginya utilitas penggunaan perangkat yang menggunakan spesifikasi rendah dan umur produksi yang lebih dari 10 tahun di perpustakaan. Data tersebut didapatkan dari hasil riset yang bekerja sama dengan HMPS Ilmu Perpustakaan UIN Syarif Hidayatullah Jakarta dari beberapa sampel yang dikumpulkan dari berbagai instansi yang ada di Jakarta.  
+
+## Spesification
+
+Untuk riset ini kami menggunakan perangkat laptop dengan spesifikasi sebagai berikut
+
+| Jenis   | Spesifikasi                                                |
+| ------- | --------------------------------------------------------- |
+| RAM     | 2 GB DDR3 PC-10600                                        |
+| CPU     | AMD E2-1800/E-350 APU (1.0 GHz, 1MB Cache)                |
+| Storage | n/a                                                       |
+| Grafis   | AMD Radeon HD 7340                                        |
+| Layar   | 14 inci, resolusi 1366 x 768 piksel, LED Backlight (16:9) |
+
+Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
+
+| Aplikasi | Versi                   |
+| -------- | ----------------------- |
+| SLiMS    | 9.7.2 (Bulian D Roger)  |
+| Htop     | 3.4.1                   |
 
 ## Methods
 
-### Pembentukan dan Pengelolaan Tim
+### Pengumpulan Data
 
-Riset dimulai dengan pembentukan tim yang dimana awalnya ada pergantian ketua yang dilakukan secara musyawarah. Pembentukan tim dilakukan secara sukarela, tanpa ada paksaan untuk bergabung dengan tim riset shelver os. Untuk pengelolaan tim, dilakukan berdasarkan kemampuan individu, seperti kemampuan dalam melakukan instalasi kernel, desktop environment, dan browser. Testing terkait riset pun sudah dibagi kepada individu yang mampu melakukan testing.
+1. Mengumpulkan informasi melalui kerjasama dengan organisasi terkait untuk pengumpulan spesifikasi komputer
+2. Pengolahan data spesifikasi komputer untuk mendapatkan gambaran umum terkait spesifikasi komputer yang digunakan di perpustakaan
+3. Mengumpulkan informasi-informasi kernel yang memungkinkan untuk bisa berjalan secara optimal pada spesifikasi komputer yang didapat
+4. Mengumpulkan informasi-informasi desktop environment yang memungkinkan untuk bisa berjalan secara optimal pada spesifikasi komputer yang didapat
+5. Mengumpulkan informasi-informasi browser yang memungkinkan untuk bisa berjalan secara optimal pada spesifikasi komputer yang didapat
 
-### Proses Riset
+### Pelaksanaan Eksperimen
 
-Proses riset dilakukan secara bertahap, dimulai dari persiapan lingkungan pengujian, penentuan parameter pengukuran, hingga eksekusi pengujian. Setiap pengujian dilakukan dengan skenario yang sama untuk menjaga konsistensi data. Parameter yang diamati meliputi penggunaan sumber daya sistem, stabilitas selama penggunaan, serta respons sistem terhadap aktivitas tertentu.
-
-Selama proses riset, seluruh aktivitas dicatat secara rinci, termasuk kondisi awal sistem, perubahan konfigurasi, dan hasil pengamatan. Dokumentasi dilakukan secara real-time untuk meminimalkan kehilangan data penting.
+1. Melakukan instalasi kernel yang berpotensi kepada sistem uji coba
+2. Melakukan instalasi desktop environment yang berpotensi kepada sistem uji coba
+3. Melakukan instalasai aplikasi untuk mendukung hasil penelitian
+4. Melakukan benchmarking dan pencatatan hasil benchmarking terhadap setiap kernel dan desktop environment
+5. Menerapkan sistem ranking untuk menetapkan candidate terbaik
 
 ### kernel
 #### 1. linux git
@@ -141,13 +164,6 @@ untuk riset desktop enviroment team memilih enam kandidat desktop enviroment, ka
 
 ### browser
 
-
-
-### Penanganan Error
-
-Dalam pelaksanaan riset, ditemukan beberapa error dan kendala teknis, seperti ketidakstabilan sistem, error aplikasi, maupun hasil pengukuran yang tidak konsisten. Setiap error tidak diabaikan, melainkan dicatat sebagai bagian dari data riset. Tim melakukan analisis penyebab error, kemudian menentukan apakah error tersebut berasal dari faktor sistem, konfigurasi, atau metode pengujian.
-
-Pendekatan ini dilakukan agar hasil riset mencerminkan kondisi nyata di lapangan, bukan hanya kondisi ideal tanpa gangguan.
 
 ## Result
 
